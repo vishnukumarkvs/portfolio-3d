@@ -19,6 +19,10 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import aws from "./tech/aws.png";
+import nextjs from "./tech/nextjs.png";
+import kubernetes from "./tech/kubernetes.svg";
+import java from "./tech/Java.png";
 
 import medium from "./company/medium.png";
 import tcs from "./company/tcs.png";
@@ -29,6 +33,10 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
 export {
+  java,
+  kubernetes,
+  nextjs,
+  aws,
   backend,
   creator,
   mobile,

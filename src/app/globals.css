@@ -8,6 +8,12 @@
   --line-color: white; /* or any other color */
 }
 
+*,
+*:before,
+*:after {
+  @apply cursor-default;
+}
+
 * {
   margin: 0;
   padding: 0;

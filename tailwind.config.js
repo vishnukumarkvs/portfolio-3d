@@ -4,6 +4,9 @@ module.exports = {
   mode: "jit",
   theme: {
     extend: {
+      cursor: {
+        default: "url(/cursor32.png), default",
+      },
       colors: {
         primary: "#050816",
         secondary: "#aaa6c3",
