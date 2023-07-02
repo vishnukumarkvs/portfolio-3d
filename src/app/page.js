@@ -8,6 +8,7 @@ import {
   Tech,
   Works,
 } from "@/components";
+import GithubCalendar from "@/components/GithubCalendar";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
           <About />
           <Experience />
           <Tech />
+          <GithubCalendar />
           <Works />
           <Feedbacks />
           <div className="relative z-0">
