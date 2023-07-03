@@ -28,11 +28,21 @@ import medium from "./company/medium.png";
 import tcs from "./company/tcs.png";
 import lw from "./company/lw.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import ecommerce_backend_cdk from "./projects/ecommerce_backend_cdk.png";
+import nextjsrealtimechat from "./projects/nextjsrealtimechat.png";
+import aws_bill from "./projects/aws_bill.png";
+import storeit from "./projects/storeit.png";
+import unsplash from "./projects/unsplash.png";
+
+import www from "./www.png";
 
 export {
+  www,
+  unsplash,
+  storeit,
+  aws_bill,
+  nextjsrealtimechat,
+  ecommerce_backend_cdk,
   java,
   kubernetes,
   nextjs,
@@ -58,9 +68,6 @@ export {
   typescript,
   threejs,
   medium,
-  carrent,
-  jobit,
-  tripguide,
   tcs,
   lw,
 };

@@ -36,3 +36,11 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 npm installs
 
 npm install @react-three/fiber @react-three/drei maath react-parallax-tilt react-vertical-timeline-component @emailjs/browser framer-motion three
+
+Github
+push events - commits
+
+https://api.github.com/users/vishnukumarkvs/events
+
+image
+https://ghchart.rshah.org/vishnukumarkvs

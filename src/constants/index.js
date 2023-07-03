@@ -16,10 +16,13 @@ import {
   medium,
   tcs,
   lw,
-  carrent,
-  jobit,
-  tripguide,
-  threejs,
+  ecommerce_backend_cdk,
+  nextjsrealtimechat,
+  aws_bill,
+  storeit,
+  github,
+  www,
+  unsplash,
 } from "../assets";
 
 export const navLinks = [
@@ -170,67 +173,116 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Ecommerce Backend with AWS CDK",
+    cardicon: github,
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "I developed an Ecommerce backend on AWS using AWS SDK for business logic and AWS CDK for infrastructure creation. The solution features 3 APIs in API Gateway, serverless business logic with AWS Lambda, and data storage in DynamoDB. I have developed 3 microservices: Product, Cart and Order microservice. Communication between the cart and order microservices is handled asynchronously via AWS EventBridge and SQS.",
     tags: [
       {
-        name: "react",
+        name: "AWS",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "Lambda",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "EventBridge",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: ecommerce_backend_cdk,
+    source_code_link:
+      "https://github.com/vishnukumarkvs/aws-serverless-ecommerce",
   },
   {
-    name: "Job IT",
+    name: "Nextjs Realtime Chat Apllications",
+    cardicon: github,
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "I have developed a Realtime Chat Application utilizing Next.js. This app empowers users to engage in seamless and instantaneous communication with one another. By leveraging the power of tailwindcss, I have ensured that the application is visually appealing and responsive across various devices. To enable the real-time functionality, I have used Upstash Redis as adapter for Nextjs and Pusher for realtime communication.",
     tags: [
       {
-        name: "react",
+        name: "Nextjs",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "Upstash Redis",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "Pusherjs",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: nextjsrealtimechat,
+    source_code_link: " https://github.com/vishnukumarkvs/nextjs-realtime-chat",
   },
   {
-    name: "Trip Guide",
+    name: "AWS Bill Report",
+    cardicon: github,
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "The AWS Lambda function I've built utilizes the powerful AWS Cost Explorer API to gather comprehensive cost and usage data for your AWS accounts. It then efficiently generates a detailed email report, tailored to your needs, and sends it directly to a designated recipient. This report includes essential information such as the list of active resources, the total cost incurred, and a thorough breakdown of costs categorized by each resource, ensuring transparent and informed decision-making",
     tags: [
       {
-        name: "nextjs",
+        name: "AWS",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "Cost Explorer",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "SES",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: aws_bill,
+    source_code_link:
+      "https://github.com/vishnukumarkvs/AWS-Bill-Weekly-Reports",
+  },
+  {
+    name: "Storeit",
+    cardicon: www,
+    description:
+      "I have crafted a user-friendly cloud storage application that enables seamless file uploading and instant search capabilities. Powered by Next.js and AWS Amplify, the app leverages a robust tech stack, including built-in AWS services such as Cognito for authentication, S3 for storage, DynamoDB for data model, and AppSync for data synchronization. With a sleek interface designed using Tailwind CSS, users can easily manage and access their stored files.",
+    tags: [
+      {
+        name: "AWS Amplify",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Cognito",
+        color: "green-text-gradient",
+      },
+      {
+        name: "AppSync",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: storeit,
+    source_code_link: "https://storeit.vishnukvs.xyz/",
+  },
+  {
+    name: "Splashit",
+    cardicon: github,
+    description:
+      "Splashit, a remarkable clone of a popular photo sharing platform unsplash, embodies an innovative backend microservices architecture. Deployed on AWS, this cutting-edge platform harnesses the power of state-of-the-art technologies. It guarantees users a seamless and immersive experience, focusing on scalability and reliability for exceptional performance, even under heavy loads. Leveraging Spring Boot for the backend, AWS SDK, and SQS for decoupling, I ensured the platform's efficiency and robustness.",
+    tags: [
+      {
+        name: "Springboot",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Java",
+        color: "green-text-gradient",
+      },
+      {
+        name: "AWS",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: unsplash,
+    source_code_link: "https://github.com/vishnukumarkvs/splashit",
   },
 ];
 
