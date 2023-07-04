@@ -40,7 +40,6 @@ const ServiceCard = ({ index, title, icon }) => (
 );
 
 const About = () => {
-  console.log(services);
   return (
     <>
       <motion.div>

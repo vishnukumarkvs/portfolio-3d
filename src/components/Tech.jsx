@@ -40,7 +40,6 @@ const SkillCard = ({ index, title, icon }) => (
 );
 
 const Tech = () => {
-  console.log("skills", technologies);
   return (
     <>
       <div>
