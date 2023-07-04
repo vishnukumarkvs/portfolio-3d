@@ -7,6 +7,7 @@ import { styles } from "@/lib/utils/styles";
 import { EarthCanvas } from "@/components/canvas";
 import { SectionWrapper } from "@/hoc";
 import { slideIn } from "@/lib/utils/motion";
+import { toast } from "react-hot-toast";
 
 const Contact = () => {
   const formRef = useRef();
@@ -48,9 +49,11 @@ const Contact = () => {
       if (response.ok) {
         // Email sent successfully
         console.log("Email sent successfully");
+        toast.success("Email sent successfully");
       } else {
         // Failed to send email
         console.log("Failed to send email");
+        toast.error("Failed to send email");
       }
     } catch (error) {
       console.error(error);
