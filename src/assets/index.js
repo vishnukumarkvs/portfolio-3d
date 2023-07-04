@@ -35,8 +35,14 @@ import storeit from "./projects/storeit.png";
 import unsplash from "./projects/unsplash.png";
 
 import www from "./www.png";
+import credly from "./credly.png";
+import linkedin from "./linkedin.png";
+import github1 from "./github1.png";
 
 export {
+  github1,
+  credly,
+  linkedin,
   www,
   unsplash,
   storeit,

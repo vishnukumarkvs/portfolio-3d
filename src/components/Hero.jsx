@@ -4,6 +4,8 @@ import React from "react";
 import { motion } from "framer-motion";
 import { styles } from "@/lib/utils/styles";
 import { ComputersCanvas } from "./canvas";
+import { externalLinks } from "@/constants";
+import Image from "next/image";
 
 const Hero = () => {
   return (
@@ -24,6 +26,23 @@ const Hero = () => {
             with expertise in Cloud Computing <br className="sm:block hidden" />
             and Full Stack Development
           </p>
+          <div className="flex justify-start items-center w-full h-full gap-2 mt-5">
+            {externalLinks.map((item, index) => {
+              return (
+                <div key={index} className="cursor-pointer z-10">
+                  <div onClick={() => window.open(item.link, "_blank")}>
+                    <Image
+                      width={32}
+                      height={32}
+                      src={item.icon}
+                      alt={item.link}
+                      className="rounded-md p-1 bg-gray-200"
+                    />
+                  </div>
+                </div>
+              );
+            })}
+          </div>
         </div>
       </div>
       <ComputersCanvas />

@@ -23,6 +23,9 @@ import {
   github,
   www,
   unsplash,
+  linkedin,
+  credly,
+  github1,
 } from "../assets";
 
 export const navLinks = [
@@ -294,4 +297,30 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+const externalLinks = [
+  {
+    icon: github1,
+    link: "https://github.com/vishnukumarkvs",
+  },
+  {
+    icon: linkedin,
+    link: "https://www.linkedin.com/in/vishnu-kvs/",
+  },
+  {
+    icon: medium,
+    link: "https://kvs-vishnu23.medium.com/",
+  },
+  {
+    icon: credly,
+    link: "https://www.credly.com/users/kavali-vignesh-sai-vishnu-kumar.bb376182/badges",
+  },
+];
+
+export {
+  services,
+  technologies,
+  experiences,
+  testimonials,
+  projects,
+  externalLinks,
+};

@@ -53,7 +53,7 @@ const Contact = () => {
       } else {
         // Failed to send email
         console.log("Failed to send email");
-        toast.error("Failed to send email");
+        toast.error("Failed to send email. Please reach me out via Linkedin");
       }
     } catch (error) {
       console.error(error);
