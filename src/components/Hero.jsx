@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { styles } from "@/lib/utils/styles";
 import { ComputersCanvas } from "./canvas";
@@ -8,6 +8,20 @@ import { externalLinks } from "@/constants";
 import Image from "next/image";
 
 const Hero = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 415);
+    };
+
+    handleResize(); // Initial check
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <section className="relative w-[80%] h-screen mx-auto">
       <div
@@ -45,7 +59,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <ComputersCanvas />
+      {isMobile ? null : <ComputersCanvas />}
 
       <div className="absolute xs:bottom-5 bottom-32 w-full flex justify-center items-center">
         <a href="#about">
