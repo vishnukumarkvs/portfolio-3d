@@ -48,7 +48,7 @@ const Tech = () => {
         </p>
         <h2 className={`${styles.sectionHeadText} text-center`}>Skills.</h2>
       </div>
-      <div className="mt-20 ml-4 flex flex-wrap gap-5">
+      <div className="mt-20 ml-4 flex flex-wrap gap-5 justify-center items-center">
         {technologies.map((skill, index) => {
           return (
             <SkillCard
